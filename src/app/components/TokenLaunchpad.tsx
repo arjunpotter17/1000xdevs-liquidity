@@ -87,7 +87,7 @@ export function TokenLaunchpad() {
             await wallet.sendTransaction(transaction2, connection);
             toast.success(`Associated token account created at ${associatedToken.toBase58()}`);
             const transaction3 = new Transaction().add(
-                createMintToInstruction(mintKeypair.publicKey, associatedToken, wallet.publicKey, Number(initialSupply), [], TOKEN_2022_PROGRAM_ID)
+                createMintToInstruction(mintKeypair.publicKey, associatedToken, wallet.publicKey, Number(initialSupply)*10**9, [], TOKEN_2022_PROGRAM_ID)
             );
 
             await wallet.sendTransaction(transaction3, connection);
