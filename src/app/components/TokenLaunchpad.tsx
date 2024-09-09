@@ -112,28 +112,28 @@ export function TokenLaunchpad() {
             <h1 className="text-3xl font-bold mb-6 text-indigo-600">Solana Token Launchpad</h1>
             <div className="w-full max-w-md bg-white rounded-lg shadow-lg p-6 space-y-4">
                 <input
-                    className="inputText w-full border border-gray-300 p-3 rounded focus:ring-2 focus:ring-indigo-500 focus:outline-none"
+                    className="text-black w-full border border-gray-300 p-3 rounded focus:ring-2 focus:ring-indigo-500 focus:outline-none"
                     type="text"
                     placeholder="Token Name"
                     value={tokenName}
                     onChange={(e) => setTokenName(e.target.value)}
                 />
                 <input
-                    className="inputText w-full border border-gray-300 p-3 rounded focus:ring-2 focus:ring-indigo-500 focus:outline-none"
+                    className="text-black w-full border border-gray-300 p-3 rounded focus:ring-2 focus:ring-indigo-500 focus:outline-none"
                     type="text"
                     placeholder="Token Symbol"
                     value={tokenSymbol}
                     onChange={(e) => setTokenSymbol(e.target.value)}
                 />
                 <input
-                    className="inputText w-full border border-gray-300 p-3 rounded focus:ring-2 focus:ring-indigo-500 focus:outline-none"
+                    className="text-black w-full border border-gray-300 p-3 rounded focus:ring-2 focus:ring-indigo-500 focus:outline-none"
                     type="text"
-                    placeholder="Image URL"
+                    placeholder="Metadata URI (Optional)"
                     value={imageUrl}
                     onChange={(e) => setImageUrl(e.target.value)}
                 />
                 <input
-                    className="inputText w-full border border-gray-300 p-3 rounded focus:ring-2 focus:ring-indigo-500 focus:outline-none"
+                    className="text-black w-full border border-gray-300 p-3 rounded focus:ring-2 focus:ring-indigo-500 focus:outline-none"
                     type="text"
                     placeholder="Initial Supply"
                     value={initialSupply}
