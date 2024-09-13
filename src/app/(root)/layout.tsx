@@ -29,7 +29,7 @@ export default function RootLayout({
       <ConnectionProvider endpoint={"https://api.devnet.solana.com"}>
         <WalletProvider wallets={[]} autoConnect>
             <WalletModalProvider>
-            <Toaster richColors/>
+            <Toaster richColors expand visibleToasts={6}/>
             <Navbar/>
               {children}
             </WalletModalProvider>

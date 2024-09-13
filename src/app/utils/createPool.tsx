@@ -51,9 +51,6 @@ export const createPool = async (
     decimals: token2decimals,
   };
 
-  console.log('mintA', mintA);
-  console.log('mintB', mintB);
-
   const feeConfigs = await raydium.api.getCpmmConfigs();
 
   if (raydium.cluster === 'devnet') {
