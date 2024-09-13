@@ -81,11 +81,12 @@ export function TokenLaunchpad() {
           },
           error: "An error occurred during token creation.",
         }
+        
       );
+      setLoading(false);
     } catch (error) {
       toast.error("An error occurred during token creation.");
       console.error(error);
-    } finally {
       setLoading(false);
     }
   }
