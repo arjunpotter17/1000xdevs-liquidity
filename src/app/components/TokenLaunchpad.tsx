@@ -77,7 +77,7 @@ export function TokenLaunchpad() {
             }
             if(data)
             // Return a message to display in the toast
-            return <p>"Token created successfully!" <br/> Mint: {data[0]} <br/> Transfer: {data[1]}</p>;
+            return <p>Token created successfully!<br/> Mint: {data[0]} <br/> Transfer: {data[1]}</p>;
           },
           error: "An error occurred during token creation.",
         }
